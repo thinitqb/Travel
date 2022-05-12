@@ -1,0 +1,42 @@
+@for $i from 6 through 50 {
+    .rounded-#{$i} {
+      border-radius: #{$i}px !important;
+    }
+  }
+  
+  @for $i from 5 through 100 {
+    .font-size-#{$i} {
+      font-size: #{$i/10}rem !important;
+    }
+  }
+  
+  @for $i from 1 through 9 {
+    .font-weight-#{$i}00 {
+      font-weight: #{$i * 100} !important;
+    }
+  }
+
+  @for $i from 50 through 1000 {
+    .max-width-#{$i} {
+      max-width: #{$i}px !important;
+    }
+  }
+  
+  @for $i from 1 through 100 {
+    .line-height-#{$i} {
+      line-height: #{$i/10}rem !important;
+    }
+  }
+  .bg-white {
+      background-color: #ffffff !important;
+  }
+  .text {
+      color: #5E6282 !important;
+      font-size: 1.6rem;
+      font-family: Poppins !important; 
+  }
+  .title {
+      color: #14183E !important;
+      font-size: 5rem ;
+      font-family: Volkhov !important;
+  }
