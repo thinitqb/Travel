@@ -34,6 +34,10 @@ img {
   height: 40px !important;
 }
 
+.wrapper .navbar-nav {
+  font-family: Product Sans Regular;
+}
+
 .wrapper .navbar-nav a {
   color: #212832 !important;
 }
@@ -174,6 +178,7 @@ img {
 }
 
 .services__content--items {
+  aspect-ratio: 267/314;
   border-radius: 36px;
 }
 
@@ -264,6 +269,14 @@ img {
   margin-bottom: 60px !important;
 }
 
+.destination__content--items .images {
+  aspect-ratio: 314/327;
+}
+
+.destination__content--items .images img {
+  width: 100%;
+}
+
 .booking {
   padding-top: 100px !important;
   overflow-x: hidden;
@@ -281,6 +294,7 @@ img {
 .booking__images {
   background-color: #ffffff;
   position: relative;
+  padding: 20px 25px !important;
 }
 
 .booking__images--decore {
@@ -333,6 +347,8 @@ img {
 .sponsors {
   padding-top: 100px !important;
   margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sponsors > div {

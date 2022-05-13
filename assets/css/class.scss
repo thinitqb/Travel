@@ -1,4 +1,4 @@
-@for $i from 6 through 50 {
+@for $i from 5 through 50 {
     .rounded-#{$i} {
       border-radius: #{$i}px !important;
     }

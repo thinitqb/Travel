@@ -47,20 +47,6 @@
     top: -20px;
     right: 40px;
   }
-  .destination__content--items {
-    max-width: 228px;
-  }
-  .booking__images {
-    max-width: 300px !important;
-  }
-  .booking__images--decore {
-    top: -120px;
-    right: -100px;
-  }
-  .sponsors > div {
-    width: 200px;
-    height: 66px;
-  }
   .subscribe-section::before {
     -webkit-transform: translate(45%, -45%);
             transform: translate(45%, -45%);
@@ -68,9 +54,6 @@
 }
 
 @media (max-width: 992px) {
-  html {
-    font-size: 37.5% !important;
-  }
   .navbar {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
@@ -88,6 +71,9 @@
     display: -ms-flexbox !important;
     display: flex !important;
     margin-right: 30px !important;
+  }
+  .booking__images--decore {
+    display: none;
   }
   .wrapper__content--items .title::after {
     top: 27%;
@@ -111,11 +97,21 @@
     width: 44px;
     height: 44px;
   }
-  .booking__content--title h2 {
-    max-width: 340px !important;
+  .destination__content--items .content p {
+    font-size: 2.4rem !important;
   }
-  .booking__images {
-    width: 250px;
+  .booking {
+    display: block !important;
+    overflow-x: unset !important;
+  }
+  .booking__content {
+    width: 100% !important;
+  }
+  .text {
+    font-size: 2.4rem;
+  }
+  .booking__content--title h2 {
+    max-width: unset !important;
   }
   .services {
     padding-top: 70px !important;
@@ -126,11 +122,22 @@
     bottom: -10px;
     left: -17px;
   }
-  .testimonials-section__content--items .testimonial {
-    max-width: 280px;
+  .testimonials-section__content {
+    display: block !important;
   }
   .testimonials-section__content--title {
-    max-width: 340px;
+    margin-bottom: 50px;
+  }
+  .testimonials-section__content--items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .testimonials-section__content--items .testimonial::after {
     background-size: contain !important;
@@ -139,22 +146,21 @@
     background-repeat: no-repeat;
   }
   .testimonial.not-active {
-    top: 48px !important;
-    left: 28px !important;
+    top: 61px !important;
+    left: 185px !important;
   }
-  .booking__images--decore {
-    top: -110px;
-    right: -48px;
+  .testimonials-section__content--slides {
+    display: block !important;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .testimonials-section__content--slides > * {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .sponsors {
-    padding-top: 50px !important;
-  }
-  .sponsors > div {
-    width: 128px;
-    height: 48px;
-  }
-  .sponsors > div img {
-    width: 70%;
+    padding-top: 0 !important;
+    margin-bottom: 50px !important;
   }
   .subscribe-section {
     padding: 66px 0 !important;
@@ -206,11 +212,11 @@
   }
   .wrapper__content .find-our-more {
     height: 32px;
-    width: 92px;
+    width: 120px;
   }
   .wrapper__content .play-demo {
     height: 32px;
-    width: 93px;
+    width: 124px;
   }
   .wrapper__content .play-demo div {
     width: 32px;
@@ -219,29 +225,13 @@
   .services__title .title {
     margin-bottom: 15px !important;
   }
-  .services__content--items p {
-    max-width: 120px !important;
-  }
   .services__content--items > div {
     height: 80px !important;
   }
-  .booking__images {
-    width: 192px;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-  }
-  .booking__content--items p {
-    max-width: 242px !important;
-  }
-  .booking__images--decore {
-    top: -92px;
-    right: -52px;
-  }
-  .testimonials-section__content--items .testimonial {
-    max-width: 212px;
-  }
   .testimonial.not-active {
-    left: 24px !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: none !important;
   }
   .subscribe-section h4 {
     max-width: 368px !important;
@@ -296,12 +286,19 @@
         -ms-flex-order: 2 !important;
             order: 2 !important;
   }
-  .services__content--items {
-    max-width: 250px;
-  }
 }
 
 @media (max-width: 576px) {
+  .footer__content--nav-columns {
+    width: 100%;
+    margin-left: 12px !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__content--nav-columns > div {
+    margin: 0 !important;
+  }
   .wrapper {
     padding-bottom: 0 !important;
   }
@@ -342,14 +339,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .services__content--items {
-    max-width: 200px;
-  }
   .booking {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding-bottom: 50px !important;
   }
   .testimonials-section {
@@ -377,10 +367,6 @@
   .booking {
     padding-top: 50px !important;
   }
-  .booking__images {
-    margin-top: 50px !important;
-    width: 250px !important;
-  }
   .subscribe-section h4 {
     max-width: 236px !important;
     font-size: 1.8rem !important;
@@ -396,10 +382,6 @@
   }
   .testimonials-section {
     margin-top: 50px !important;
-  }
-  .sponsors {
-    padding-top: 0 !important;
-    margin-bottom: 50px !important;
   }
   .footer__content {
     -webkit-box-pack: start !important;

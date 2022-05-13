@@ -5,6 +5,9 @@ html {
   font-family: Poppins !important;
   // overflow-x: hidden ;
 }
+
+
+
 *,
 *:before,
 *:after {
@@ -30,8 +33,11 @@ img {
     padding-top: 48px !important;
     margin-bottom: 29px;
     height: 40px !important;
-    &-nav a {
-      color: #212832 !important;
+    &-nav {
+      font-family: Product Sans Regular;
+      a {
+        color: #212832 !important;
+      }
     }
     .btn {
       font-size: 1.7rem;
@@ -144,6 +150,7 @@ img {
   }
   &__content {
     &--items {
+      aspect-ratio: 267/314;
       border-radius: 36px;
       &::after {
         content: "";
@@ -219,6 +226,16 @@ img {
       margin-bottom: 60px !important;
     }
   }
+  &__content {
+    &--items {
+      .images {
+        aspect-ratio: 314/327;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 .booking {
   padding-top: 100px !important;
@@ -235,6 +252,7 @@ img {
   &__images {
     background-color: #ffffff;
     position: relative;
+    padding: 20px 25px !important;
     &--decore {
       position: absolute;
       width: 100%;
@@ -281,6 +299,7 @@ img {
 .sponsors {
   padding-top: 100px !important;
   margin-bottom: 100px;
+  flex-wrap: wrap;
   & > div {
     img {
       filter: grayscale(100%);
