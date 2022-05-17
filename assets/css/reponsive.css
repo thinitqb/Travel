@@ -72,6 +72,9 @@
     display: flex !important;
     margin-right: 30px !important;
   }
+  .wrapper__content--items .title::after {
+    top: 38% !important;
+  }
   .booking__images--decore {
     display: none;
   }
@@ -97,8 +100,8 @@
     width: 44px;
     height: 44px;
   }
-  .destination__content--items .content p {
-    font-size: 2.4rem !important;
+  .destination__content--items {
+    width: 200px;
   }
   .booking {
     display: block !important;
@@ -107,14 +110,20 @@
   .booking__content {
     width: 100% !important;
   }
+  .booking__content--items .content p {
+    max-width: unset !important;
+  }
   .text {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
   .booking__content--title h2 {
     max-width: unset !important;
   }
   .services {
     padding-top: 70px !important;
+  }
+  .services__content--items .text {
+    font-size: 1.6rem !important;
   }
   .services__content--items::after {
     width: 40px;
@@ -153,6 +162,8 @@
     display: block !important;
     text-align: center;
     margin-top: 50px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .testimonials-section__content--slides > * {
     margin-left: 10px;
@@ -161,6 +172,9 @@
   .sponsors {
     padding-top: 0 !important;
     margin-bottom: 50px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   .subscribe-section {
     padding: 66px 0 !important;
@@ -195,6 +209,43 @@
   }
 }
 
+@media (max-width: 870px) {
+  .footer__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    max-width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .footer__content--nav-columns {
+    -webkit-box-ordinal-group: 4 !important;
+        -ms-flex-order: 3 !important;
+            order: 3 !important;
+    margin-left: 0px !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    width: 60% !important;
+  }
+  .footer__content--nav-columns > div {
+    margin-left: 0px !important;
+  }
+  .footer__content--company {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    margin-left: 0 !important;
+    padding-left: 6px;
+  }
+  .end-footer {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 4rem !important;
@@ -216,7 +267,8 @@
   }
   .wrapper__content .play-demo {
     height: 32px;
-    width: 124px;
+    width: 132px;
+    margin: 0 !important;
   }
   .wrapper__content .play-demo div {
     width: 32px;
@@ -235,7 +287,7 @@
   }
   .subscribe-section h4 {
     max-width: 368px !important;
-    font-size: 2.8rem !important;
+    font-size: 2rem !important;
   }
   .subscribe-section {
     padding: 24px 0 !important;
@@ -250,6 +302,7 @@
   .subscribe-section__items .btn {
     width: 64px;
     height: 32px;
+    font-size: 1.3rem !important;
   }
   .subscribe-section::before {
     -webkit-transform: translate(50%, -50%);
@@ -267,40 +320,21 @@
   .subscribe-section__decore2 {
     width: 76px;
   }
-  .footer__content {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer__content--nav-columns {
-    -webkit-box-ordinal-group: 4 !important;
-        -ms-flex-order: 3 !important;
-            order: 3 !important;
-  }
-  .footer__content--company {
-    -webkit-box-ordinal-group: 2 !important;
-        -ms-flex-order: 1 !important;
-            order: 1 !important;
-  }
-  .end-footer {
-    -webkit-box-ordinal-group: 3 !important;
-        -ms-flex-order: 2 !important;
-            order: 2 !important;
-  }
 }
 
 @media (max-width: 576px) {
   .footer__content--nav-columns {
-    width: 100%;
-    margin-left: 12px !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100% !important;
   }
   .footer__content--nav-columns > div {
     margin: 0 !important;
   }
   .wrapper {
     padding-bottom: 0 !important;
+    padding-left: 9px;
   }
   .wrapper__content {
     -ms-flex-wrap: wrap;
@@ -327,9 +361,6 @@
   .wrapper__content--items {
     margin-top: 50px !important;
   }
-  .wrapper__content .play-demo {
-    width: 120px;
-  }
   .wrapper__content--items .title::after {
     top: 75%;
     left: 12%;
@@ -339,8 +370,21 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .services__content--items {
+    aspect-ratio: unset !important;
+    width: 300px;
+  }
+  .destination__content--items {
+    aspect-ratio: unset !important;
+    width: 300px;
+  }
   .booking {
     padding-bottom: 50px !important;
+    padding-left: 15px;
+  }
+  .booking__images {
+    margin: auto;
+    width: 300px;
   }
   .testimonials-section {
     position: relative;
@@ -355,20 +399,30 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 15px;
   }
   .testimonials-section__content--items {
+    margin: auto !important;
+    max-width: 300px;
     margin-top: 50px !important;
   }
+  .testimonials-section__content--items .testimonial {
+    max-width: 300px;
+    margin: auto !important;
+  }
   .testimonials-section__content--slides {
-    position: absolute;
-    right: 0%;
-    top: 60%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin: 0 !important;
   }
   .booking {
     padding-top: 50px !important;
   }
+  .subscribe-section {
+    width: 95% !important;
+  }
   .subscribe-section h4 {
-    max-width: 236px !important;
+    max-width: 340px !important;
     font-size: 1.8rem !important;
   }
   .subscribe-section::before {
@@ -387,6 +441,21 @@
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
+    padding-left: 9px;
+  }
+}
+
+@media (max-width: 432px) {
+  .footer__content--nav-columns {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .subscribe-section h4 {
+    max-width: 248px !important;
+    font-size: 1.4rem !important;
+  }
+  .testimonials-section__content--items {
+    max-width: 250px;
   }
 }
 /*# sourceMappingURL=reponsive.css.map */

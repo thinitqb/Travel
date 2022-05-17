@@ -269,10 +269,6 @@ img {
   margin-bottom: 60px !important;
 }
 
-.destination__content--items .images {
-  aspect-ratio: 314/327;
-}
-
 .destination__content--items .images img {
   width: 100%;
 }
